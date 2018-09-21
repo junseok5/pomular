@@ -1,11 +1,8 @@
 .MediaView {
   position: relative;
   width: 100%;
-  overflow: hidden;
-}
-
-.aj {
   margin-top: 70px;
+  overflow: hidden;
 }
 
 .video-mode {
@@ -21,8 +18,6 @@
   width: 50%;
   height: 100%;
   line-height: 35px;
-  /* padding-top: 10px; */
-  border-radius: 4px;
   background-color: #4C4C4C;
   cursor: pointer;
 }
@@ -50,9 +45,9 @@
   margin: 14px 0;
 }
 
-@media screen and (max-width: 700px) {
-  .aj {
-    display: none;
+@media screen and (max-width: 800px) {
+  .MediaView {
+    margin-top: 0;
   }
 
   .video-mode {

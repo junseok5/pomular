@@ -1,6 +1,5 @@
 <template>
   <div class="MediaView">
-    <div class="aj"></div>
     <YoutubeMedia v-if="videoMode.youtube" @setTimer="setTimer" />
     <UserMedia v-if="videoMode.my" />
     <div class="video-mode">

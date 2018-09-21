@@ -28,12 +28,25 @@
 </template>
 
 <script>
-  import { mapMutations } from 'vuex'
+  import { mapState, mapMutations } from 'vuex'
 
   export default {
     data () {
       return {
         showMenu: false
+      }
+    },
+    computed: {
+      ...mapState(['isScroll'])
+    },
+    watch: {
+      isScroll () {
+        const header = this.$refs['header']
+        if (this.isScroll) {
+          header.style.background = '#333333'
+        } else {
+          header.style.background = 'none'
+        }
       }
     },
     methods: {

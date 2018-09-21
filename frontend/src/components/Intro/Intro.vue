@@ -1,5 +1,5 @@
 <template>
-    <div class="Intro">
+    <div class="Intro" ref="intro">
         <div class="Intro__logo">
             <img src="../../assets/logo_pomular_8_128.png" draggable="false" />
             <span>Pomular</span>
@@ -67,10 +67,25 @@
 import { mapMutations } from 'vuex'
 
 export default {
+  mounted () {
+    window.onscroll = (e) => {
+      const intro = this.$refs['intro']
+      const is = intro.scrollTop
+      const ws = window.scrollY
+
+      if (ws > is) {
+        // scroll이 밑으로 내려갈 때
+        this.setIsScroll(true)
+      } else if (ws === is) {
+        this.setIsScroll(false)
+      }
+    }
+  },
   methods: {
     ...mapMutations([
       'setVideoMode',
-      'setLocalStorageVideoMode'
+      'setLocalStorageVideoMode',
+      'setIsScroll'
     ]),
     linkToGithub () {
       window.open('https://github.com/junseok5/pomular')
@@ -82,6 +97,9 @@ export default {
     },
     linkToYoutube () {
       this.$router.push('/list')
+    },
+    handleScroll (e) {
+      console.log(e)
     }
   }
 }

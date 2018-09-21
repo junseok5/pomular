@@ -415,6 +415,10 @@ const getLocalStorageTitle = (state) => {
   }
 }
 
+const setIsScroll = (state, val) => {
+  state.isScroll = val
+}
+
 export {
   setShowMediaLoading, setShowLoading, setShowDataLoading, setShowError, setDuration,
   setIsFullScreen, setCurrentTime, setPlay, setShowMessage, setViewMediaContr,
@@ -438,5 +442,6 @@ export {
   getLocalStorageYoutubeId, setLanguage, setContrViewSubConverter,
   setLocalStorageContrViewSubConverter, getLocalStorageContrViewSubConverter,
   setIsKoSubtitle, setIdb, setIsIdb, setChannelName, setLocalStorageChannelName,
-  getLocalStorageChannelName, setTitle, setLocalStorageTitle, getLocalStorageTitle
+  getLocalStorageChannelName, setTitle, setLocalStorageTitle, getLocalStorageTitle,
+  setIsScroll
 }

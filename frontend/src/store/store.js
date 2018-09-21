@@ -63,7 +63,8 @@ export const store = new Vuex.Store({
     timer: '',
     headerInfo: '',
     idb: undefined,
-    isIdb: false
+    isIdb: false,
+    isScroll: false
   },
   mutations,
   getters
