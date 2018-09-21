@@ -7,7 +7,7 @@
   height: 56px;
   left: 0;
   top: 0;
-  /* background-color: #333333; */
+  background-color: #333333;
   transition: .3s;
   z-index: 10;
 }
@@ -27,7 +27,6 @@
   font-size: 25px;
   font-weight: bold;
   padding: 8px;
-  /* line-height: 56px; */
 }
 
 .logo img {
@@ -61,18 +60,6 @@
 .menu-cog {
   font-size: 21px;
 }
-
-/* .Header-icon a:visited {
-  color: white;
-}
-
-.Header-icon a:hover {
-  color: #D5D5D5;
-}
-
-.Header-icon:hover {
-  color: #D5D5D5;
-} */
 
 .intro {
   position: absolute;

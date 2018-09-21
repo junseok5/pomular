@@ -8,7 +8,7 @@
         </div>
       </router-link>
     </div>
-    <div class="menu" ref="menu">
+    <div class="menu" ref="menu" @click="handleGapScroll">
       <ul>
         <li class="menu-intro" @click="clearTimer">
           <router-link to="/intro">소개</router-link>
@@ -37,21 +37,27 @@
       }
     },
     computed: {
-      ...mapState(['isScroll'])
+      ...mapState(['gapScroll'])
     },
     watch: {
-      isScroll () {
-        const header = this.$refs['header']
-        if (this.isScroll) {
-          header.style.background = '#333333'
-        } else {
-          header.style.background = 'none'
-        }
+      gapScroll () {
+        this.handleGapScroll()
       }
+    },
+    mounted () {
+      this.handleGapScroll()
     },
     methods: {
       ...mapMutations(['setShowModalSetting']),
-      ...mapMutations(['clearTimer'])
+      ...mapMutations(['clearTimer']),
+      handleGapScroll () {
+        const header = this.$refs['header']
+        if (this.gapScroll > 0) {
+          header.style.background = '#333333'
+        } else if (this.gapScroll === 0) {
+          header.style.background = 'none'
+        }
+      }
     }
   }
 </script>

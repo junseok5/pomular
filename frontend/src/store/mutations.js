@@ -415,8 +415,8 @@ const getLocalStorageTitle = (state) => {
   }
 }
 
-const setIsScroll = (state, val) => {
-  state.isScroll = val
+const setGapScroll = (state, val) => {
+  state.gapScroll = val
 }
 
 export {
@@ -443,5 +443,5 @@ export {
   setLocalStorageContrViewSubConverter, getLocalStorageContrViewSubConverter,
   setIsKoSubtitle, setIdb, setIsIdb, setChannelName, setLocalStorageChannelName,
   getLocalStorageChannelName, setTitle, setLocalStorageTitle, getLocalStorageTitle,
-  setIsScroll
+  setGapScroll
 }

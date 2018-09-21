@@ -64,28 +64,29 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 
 export default {
+  computed: {
+    ...mapState(['gapScroll'])
+  },
   mounted () {
-    window.onscroll = (e) => {
-      const intro = this.$refs['intro']
-      const is = intro.scrollTop
-      const ws = window.scrollY
+    const intro = this.$refs['intro']
+    let is = intro.scrollTop
+    let ws = window.scrollY
 
-      if (ws > is) {
-        // scroll이 밑으로 내려갈 때
-        this.setIsScroll(true)
-      } else if (ws === is) {
-        this.setIsScroll(false)
-      }
+    window.onscroll = (e) => {
+      is = intro.scrollTop
+      ws = window.scrollY
+
+      this.setGapScroll(ws - is)
     }
   },
   methods: {
     ...mapMutations([
       'setVideoMode',
       'setLocalStorageVideoMode',
-      'setIsScroll'
+      'setGapScroll'
     ]),
     linkToGithub () {
       window.open('https://github.com/junseok5/pomular')

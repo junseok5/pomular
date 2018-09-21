@@ -64,7 +64,7 @@ export const store = new Vuex.Store({
     headerInfo: '',
     idb: undefined,
     isIdb: false,
-    isScroll: false
+    gapScroll: 0
   },
   mutations,
   getters

@@ -1,5 +1,6 @@
 <template>
   <div class="YoutubeMain"
+    ref="youtube_main"
     v-infinite-scroll="getCategoryData"
     infinite-scroll-disabled="busy"
     infinite-scroll-distance="50"
@@ -9,6 +10,7 @@
       <YoutubeComponent
         v-for="(data, index) in youtubeData"
         :youtubeData="data"
+        :key="index"
       />
     </div>
     <ErrorView :message="errorMessage" />
@@ -64,10 +66,22 @@
         }
       }
     },
+    mounted () {
+      const intro = this.$refs['youtube_main']
+      let is = intro.scrollTop
+      let ws = window.scrollY
+
+      window.onscroll = (e) => {
+        is = intro.scrollTop
+        ws = window.scrollY
+        this.setGapScroll(ws - is)
+      }
+    },
     methods: {
       ...mapMutations([
         'setShowDataLoading',
-        'setShowError'
+        'setShowError',
+        'setGapScroll'
       ]),
       getCategoryData () {
         this.busy = true
