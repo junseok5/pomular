@@ -1,0 +1,20 @@
+.YoutubeMain {
+  position: relative;
+  float: left;
+  margin-top: 56px;
+  margin-left: 240px;
+}
+
+.ym-wrapper {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  .YoutubeMain {
+    width: 100%;
+    padding-top: 43px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+}

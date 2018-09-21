@@ -1,0 +1,16 @@
+.Message {
+  position: absolute;
+  font-size: 15px;
+  padding: 8px;
+  left: 50%;
+  top: 40px;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 420px) {
+  .Message {
+    top: 14px;
+  }
+}

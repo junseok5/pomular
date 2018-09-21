@@ -1,0 +1,138 @@
+.MediaInput {
+  width: 256px;
+  margin: 0 auto;
+}
+
+.chk-autoLoad {
+  font-size: 13px;
+  color: #4C4C4C;
+}
+
+.selectFile {
+  float: left;
+  margin: 10px 14px;
+  user-select: none;
+}
+
+.selectFile label {
+  position:relative;
+  cursor:pointer;
+  display:inline-block;
+  vertical-align:middle;
+  overflow:hidden;
+  font-size: 18px;
+  width:100px;
+  height:41px;
+  padding-top: 9px;
+  background: #353535;
+  color:#fff;
+  text-align:center;
+  line-height:30px;
+  border-radius: 4px;
+  transition: all .2s;
+}
+
+.selectFile label input {
+  position:absolute;
+  width:0;
+  height:0;
+  overflow:hidden;
+}
+.selectFile label:hover {
+  color: #EAEAEA;
+  background: #7B7B7B;
+}
+
+.selectFile input[type=text] {
+  vertical-align:middle;
+  display:inline-block;
+  width:auto;
+  height:28px;
+  line-height:28px;
+  font-size:11px;
+  padding:0;
+  border:0;
+  border:1px solid #777;
+  border-radius: 4px;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 0px;
+  margin: 8px 0 8px 72px;
+  margin-left: 72px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  background-color: #eee;
+  transition: all .2s;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 3px;
+  top: 0px;
+  width: 5px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 420px) {
+  .MediaInput {
+    max-width: 256px;
+    margin: 0 auto;
+  }
+
+  .selectFile label {
+    font-size: 16px;
+    height: 36px;
+    padding-top: 6px;
+  }
+}

@@ -1,0 +1,53 @@
+.StateController {
+  float: left;
+  width: 93%;
+}
+
+.state {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #BDBDBD;
+  cursor: pointer;
+}
+
+.state::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.state::-moz-range-thumb {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.state::-moz-range-track {
+  background: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .StateController {
+    width: 90%
+  }
+}
+
+@media screen and (max-width: 480px) and (orientation: landscape) {
+  .StateController {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .StateController {
+    width: 85%;
+  }
+}

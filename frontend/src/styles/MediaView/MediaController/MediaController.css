@@ -1,0 +1,15 @@
+.MediaController {
+  position: absolute;
+  width: 100%;
+  height: 23px;
+  padding: 12px 0;
+  bottom: 0px;
+  z-index: 10;
+  transition: all .2s;
+}
+
+@media screen and (max-width: 420px) {
+  .MediaController {
+    padding: 6px 0;
+  }
+}

@@ -1,0 +1,14 @@
+.DataLoading {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  /* margin-left: 190px; */
+  margin-top: -25px;
+  margin-left: 95px;
+}
+
+@media screen and (max-width: 700px) {
+  .DataLoading {
+    margin-left: -25px;
+  }
+}

@@ -1,0 +1,5 @@
+.MplayController {
+  position: relative;
+  cursor: pointer;
+  transition: all .2s;
+}

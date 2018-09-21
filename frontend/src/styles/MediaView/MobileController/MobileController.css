@@ -1,0 +1,49 @@
+.MobileController {
+  position: absolute;
+  right: 8px;
+  bottom: 70px;
+  z-index: 10;
+}
+
+.controller {
+  margin-bottom: 12px;
+  user-select: none;
+}
+
+@media screen and (max-width: 800px) {
+  .MobileController {
+    font-size: 23px;
+  }
+
+  .controller {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) and (orientation: landscape) {
+  .MobileController {
+    bottom: 38px;
+  }
+
+  .controller {
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .MobileController {
+    font-size: 16px;
+    bottom: 30px;
+    right: 0px;
+  }
+
+  .controller {
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .controller {
+    margin-bottom: 6px;
+  }
+}

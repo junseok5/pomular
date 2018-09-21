@@ -1,0 +1,112 @@
+.Header {
+  position: fixed;
+  width: 100%;
+  height: 56px;
+  left: 0;
+  top: 0;
+  background-color: #333333;
+  transition: .3s;
+  z-index: 10;
+}
+
+.logo {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 56px;
+  width: 145px;
+  margin-left: 28px;
+  user-select: none;
+  overflow: hidden
+}
+
+.logo a {
+  float: left;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.menu {
+  position: absolute;
+  right: 20%;
+  top: 2px;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 24px;
+  font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.menu li:hover {
+  color: #5586EB;
+}
+
+.menu a {
+  transition: all .2s;
+}
+
+.menu a:hover {
+  color: #5586EB;
+}
+
+.menu-cog {
+  font-size: 21px;
+  vertical-align: middle;
+}
+
+.Header-icon {
+  position: absolute;
+  font-size: 25px;
+  top: 13px;
+  user-select: none;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.Header-icon a:visited {
+  color: white;
+}
+
+.Header-icon a:hover {
+  color: #D5D5D5;
+}
+
+.Header-icon:hover {
+  color: #D5D5D5;
+}
+
+.intro {
+  position: absolute;
+  font-size: 25px;
+  right: 53px;
+}
+
+.setting {
+  right: 14px;
+}
+
+@media screen and (max-width: 960px) {
+  .menu {
+    right: 14px;
+  }
+
+  .menu li {
+    margin: 0 14px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Header {
+    display: none;
+  }
+}

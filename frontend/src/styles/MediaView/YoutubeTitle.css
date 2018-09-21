@@ -1,0 +1,22 @@
+.YoutubeTitle {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  /* line-height: 1.2; */
+  text-align: left;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.YoutubeTitle span {
+  padding: 0 14px;
+}

@@ -1,0 +1,12 @@
+.Footer {
+  clear: left;
+  color: #8C8C8C;
+  padding: 28px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 700px) {
+  .Footer {
+    margin-bottom: 50px;
+  }
+}

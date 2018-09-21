@@ -1,0 +1,17 @@
+.controller {
+  width: 55px;
+}
+
+.sectionPrev {
+  margin-right: 14px;
+}
+
+.skipControl {
+  float: left;
+}
+
+@media screen and (max-width: 420px) {
+  .controller {
+    
+  }
+}

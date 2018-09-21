@@ -1,0 +1,35 @@
+.YoutubeMedia {
+  position: relative;
+  width: 60%;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.detectMouseMove {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+}
+
+@media screen and (max-width: 800px) {
+  .YoutubeMedia {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .YoutubeMedia {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .YoutubeMedia {
+    height: 240px;
+  }
+}

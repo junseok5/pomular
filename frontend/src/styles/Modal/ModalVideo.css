@@ -1,0 +1,55 @@
+.m-back {
+  text-align: left;
+  float: left;
+  cursor: pointer;
+}
+
+.p-modal-body {
+  width: 100%;
+  height: 150px;
+}
+
+.p-select-file {
+  float: left;
+  color: #42B882;
+  font-weight: bold;
+  width: 148px;
+  height: 100%;
+  line-height: 150px;
+  margin: 0 1px;
+  background-color: #EAEAEA;
+  user-select: none;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.p-select-file:hover {
+  background-color: #D8D8D8;
+}
+
+.p-file {
+  width: 100%;
+  height: 100%;
+}
+
+.p-file label {
+  position: relative;
+  display:inline-block;
+  width: 148px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.p-file input[type=file] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-modal-body input[type=text] {
+  width: 100%;
+  height: 24px;
+  padding: 4px;
+  border: 1.5px solid #42B882;
+}

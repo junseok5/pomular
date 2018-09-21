@@ -1,0 +1,27 @@
+.Subtitle {
+  position: absolute;
+  text-align: left;
+  max-width: 100%;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 26px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  user-select: none;
+  transition: all .2s;
+}
+
+@media screen and (max-width: 800px) {
+  .Subtitle {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .Subtitle {
+    font-size: 12px;
+    max-width: 400px;
+  }
+}
