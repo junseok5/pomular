@@ -16,7 +16,7 @@
         </li>
         <li @click="clearTimer">
           <router-link to="/">학습 공간</router-link>
-        </li @click="clearTimer">
+        </li>
         <li class="menu-cog" @click="setShowModalSetting(true)">
           <font-awesome-icon icon="cog" />
         </li>

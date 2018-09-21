@@ -34,12 +34,18 @@ Vue.prototype.$http = axios
 
 Vue.config.productionTip = true
 
-new Vue({
-  el: '#app',
+const vm = new Vue({
   router,
   store,
   directives: {infiniteScroll},
-  render (h) {
-    return h(App)
-  }
+  render: h => h(App)
 })
+vm.$mount('#app')
+
+// new Vue({
+//   el: '#app',
+//   router,
+//   store,
+//   directives: {infiniteScroll},
+//   render: h => h(App)
+// })
