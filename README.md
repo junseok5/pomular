@@ -46,7 +46,7 @@ npm install
 3. if you wanna connect with mongodb, you have to add new database name 'pomular'.
 
 4. Default port
-* Frontend: http://localhost:8000
+* Frontend: http://localhost:8080
 * Backend: http://localhost:3000
 * Database: http://localhost:27017/pomular
 
