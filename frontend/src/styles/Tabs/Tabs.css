@@ -14,16 +14,18 @@
 }
 
 .tab {
-  float: left;
-  width: 25%;
-  height: 100%;
-  line-height: 50px;
+  flex-grow: 1;
   font-size: 25px;
   color: #BDBDBD;
 }
 
-@media screen and (max-width: 700px) {
+.Tabs a {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 800px) {
   .Tabs {
-    display: inline-block;
+    display: flex;
+    align-items: center;
   }
 }

@@ -6,10 +6,10 @@ const path = require('path')
 module.exports = {
   build: {
     env: require('./prod.env'),
-    index: path.resolve(__dirname, '../dist/index.html'),
-    assetsRoot: path.resolve(__dirname, '../dist/'),
-    // index: path.resolve(__dirname, '../../backend/src/public/index.html'),
-    // assetsRoot: path.resolve(__dirname, '../../backend/src/public'),
+    // index: path.resolve(__dirname, '../dist/index.html'),
+    // assetsRoot: path.resolve(__dirname, '../dist/'),
+    index: path.resolve(__dirname, '../../backend/src/public/index.html'),
+    assetsRoot: path.resolve(__dirname, '../../backend/src/public'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     productionSourceMap: true,

@@ -2,8 +2,10 @@
   <div class="Header" ref="header">
     <div class="logo">
       <router-link to="/">
-        <img src="../../assets/logo_pomular_8_128.png" align="center" draggable="false" />
-        Pomular
+        <div class="logo_content">
+          <img src="../../assets/logo_pomular_8_128.png" align="center" draggable="false" />
+          <span>Pomular</span>
+        </div>
       </router-link>
     </div>
     <div class="menu" ref="menu">

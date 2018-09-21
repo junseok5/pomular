@@ -1,21 +1,18 @@
 <template>
   <div>
     <Header />
-    <IntroTest />
+    <Intro />
   </div>
 </template>
 
 <script>
   import Header from '@/components/Header/Header.vue'
-  // import Intro from '@/components/Intro/Intro.vue'
-  import IntroTest from '@/components/Intro/Intro_test.vue'
-  // import Footer from '@/components/Footer/Footer.vue'
+  import Intro from '@/components/Intro/Intro.vue'
 
   export default {
     components: {
       'Header': Header,
-      'IntroTest': IntroTest
-      // 'Footer': Footer
+      'Intro': Intro
     }
   }
 </script>
