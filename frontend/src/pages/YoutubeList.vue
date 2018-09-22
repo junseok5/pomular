@@ -10,12 +10,12 @@
 </template>
 
 <script>
-  import Header from '../components/Header/Header'
-  import YoutubeMenu from '../components/YoutubeList/YoutubeMenu/YoutubeMenu'
-  import YoutubeMain from '../components/YoutubeList/YoutubeMain/YoutubeMain'
-  import Tabs from '../components/Tabs/Tabs'
-  import DataLoading from '../components/common/DataLoading'
-  import ModalSetting from '../components/Modal/ModalSetting.vue'
+  import Header from '@/components/Header/Header'
+  import YoutubeMenu from '@/components/YoutubeMenu/YoutubeMenu'
+  import YoutubeMain from '@/components/YoutubeMain/YoutubeMain'
+  import Tabs from '@/components/Tabs/Tabs'
+  import DataLoading from '@/components/common/DataLoading'
+  import ModalSetting from '@/components/Modal/ModalSetting.vue'
 
   export default {
     components: {

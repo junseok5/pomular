@@ -100,7 +100,7 @@
 </template>
 
 <script>
-  import Modal from '../common/Modal.vue'
+  import Modal from '@/components/common/Modal.vue'
   import { mapState, mapMutations } from 'vuex'
 
   export default {
@@ -180,5 +180,5 @@
 </script>
 
 <style scoped>
-  @import '../../styles/Modal/ModalSetting.css';
+  @import '../../styles/components/Modal/ModalSetting.css';
 </style>

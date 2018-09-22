@@ -13,5 +13,5 @@
 </script>
 
 <style scoped>
-  @import '../../styles/common/Loading.css';
+@import '../../styles/common/Loading.css';
 </style>

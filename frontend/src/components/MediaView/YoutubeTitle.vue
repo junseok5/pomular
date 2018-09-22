@@ -20,5 +20,5 @@
 </script>
 
 <style>
-  @import '../../styles/MediaView/YoutubeTitle.css'
+  @import '../../styles/components/MediaView/YoutubeTitle.css'
 </style>

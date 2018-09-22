@@ -67,5 +67,5 @@
 </script>
 
 <style>
-  @import '../../styles/Tabs/Tabs.css'
+  @import '../../styles/components/Tabs/Tabs.css'
 </style>

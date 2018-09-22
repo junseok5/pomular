@@ -6,7 +6,7 @@
       preload="auto"
       poster="../../assets/video_poster.png"
       @mousemove="controlMouseMove"
-      @click="showMediaControl"
+      @click="handleScreenClick"
       v-bind:src="objectURL"
       @timeupdate="onTimeUpdateListener"
       @seeking="onSeekingListener"
@@ -25,10 +25,10 @@
       v-on:timeRepeat="timeRepeat"
       v-on:convertSubtitleContent="convertSubtitleContent"
     />
-    <PlayController
+    <!-- <PlayController
       v-if="deviceType === 'PC'"
       v-on:playControl="playControl"
-    />
+    /> -->
     <MediaController
       v-on:fullScreenHandler="fullScreenHandler"
       v-on:setMediaCurrentTime="setMediaCurrentTime"
@@ -40,12 +40,12 @@
 
 <script>
   import Subtitle from './Subtitle.vue'
-  import MobileController from './MobileController/MobileController.vue'
-  import PlayController from './MediaController/PlayController.vue'
-  import MediaController from './MediaController/MediaController.vue'
-  import TimeViewController from './MediaController/TimeViewController.vue'
-  import Message from '../common/Message.vue'
-  import MediaLoading from '../common/MediaLoading.vue'
+  import MobileController from '@/components/MobileController/MobileController.vue'
+  import PlayController from '@/components/MediaController/PlayController.vue'
+  import MediaController from '@/components/MediaController/MediaController.vue'
+  import TimeViewController from '@/components/MediaController/TimeViewController.vue'
+  import Message from '@/components/common/Message.vue'
+  import MediaLoading from '@/components/common/MediaLoading.vue'
   import { mapState, mapMutations, mapGetters } from 'vuex'
 
   export default {
@@ -192,9 +192,10 @@
         'setIsKoSubtitle'
 
       ]),
-      clearAllInterval () {
-        for (let i = 0; i < 100; i++) {
-          window.clearInterval(i)
+      handleScreenClick () {
+        this.showMediaControl()
+        if (this.deviceType === 'PC') {
+          this.playControl()
         }
       },
       loadingControl (val) {
@@ -503,5 +504,5 @@
 </script>
 
 <style>
-  @import '../../styles/MediaView/UserMedia.css';
+  @import '../../styles/components/MediaView/UserMedia.css';
 </style>

@@ -33,5 +33,5 @@
 </script>
 
 <style>
-  @import '../../styles/common/Message.css'
+@import '../../styles/common/Message.css'
 </style>

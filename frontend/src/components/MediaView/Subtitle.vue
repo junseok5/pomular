@@ -36,5 +36,5 @@
 </script>
 
 <style>
-  @import '../../styles/MediaView/Subtitle.css';
+  @import '../../styles/components/MediaView/Subtitle.css';
 </style>

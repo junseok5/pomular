@@ -17,5 +17,5 @@
 </script>
 
 <style>
-  @import '../../styles/Header/HeaderInfo.css'
+  @import '../../styles/components/Header/HeaderInfo.css'
 </style>

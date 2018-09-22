@@ -31,5 +31,5 @@
 </script>
 
 <style>
-  @import '../../styles/MediaInput/MediaInput.css';
+  @import '../../styles/components/MediaInput/MediaInput.css';
 </style>

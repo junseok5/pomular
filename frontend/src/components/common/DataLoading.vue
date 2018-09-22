@@ -13,5 +13,5 @@
 </script>
 
 <style scoped>
-  @import '../../styles/common/DataLoading.css';
+@import '../../styles/common/DataLoading.css';
 </style>

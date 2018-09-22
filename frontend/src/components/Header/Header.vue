@@ -53,7 +53,7 @@
       handleGapScroll () {
         const header = this.$refs['header']
         if (this.gapScroll > 0) {
-          header.style.background = '#333333'
+          header.style.background = '#333'
         } else if (this.gapScroll === 0) {
           header.style.background = 'none'
         }
@@ -63,5 +63,5 @@
 </script>
 
 <style scoped>
-  @import '../../styles/Header/Header.css';
+  @import '../../styles/components/Header/Header.css';
 </style>

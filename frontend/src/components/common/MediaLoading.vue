@@ -13,5 +13,5 @@
 </script>
 
 <style scoped>
-  @import '../../styles/common/MediaLoading.css';
+@import '../../styles/common/MediaLoading.css';
 </style>

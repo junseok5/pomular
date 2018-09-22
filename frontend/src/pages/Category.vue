@@ -2,7 +2,7 @@
   <div class="Category">
     <HeaderInfo headerInfo="카테고리" />
     <div class="m-category-list">
-      <router-link :to="category.link" v-for="(category, index) in categoryData">
+      <router-link :to="category.link" v-bind:key="index" v-for="(category, index) in categoryData">
         <div class="m-category">
           {{ category.name }}
         </div>
@@ -14,9 +14,9 @@
 </template>
 
 <script>
-  import HeaderInfo from '../components/Header/HeaderInfo'
-  import Tabs from '../components/Tabs/Tabs'
-  import ModalSetting from '../components/Modal/ModalSetting.vue'
+  import HeaderInfo from '@/components/Header/HeaderInfo'
+  import Tabs from '@/components/Tabs/Tabs'
+  import ModalSetting from '@/components/Modal/ModalSetting.vue'
 
   export default {
     components: {
@@ -90,32 +90,5 @@
 </script>
 
 <style>
-  .Category {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    bottom: 50px;
-    overflow-y: auto;
-  }
-
-  .m-category-list h3 {
-    color: #4374D9;
-  }
-
-  .m-category {
-    font-weight: bold;
-    height: 35px;
-    padding-top: 15px;
-    border-bottom: 1px solid #5D5D5D;
-    /* border-top: 0.5px solid #fff; */
-    /* margin: 8px 6px; */
-    /* background-color: #3A3A3A; */
-  }
-
-  @media screen and (max-width: 700px) {
-    .Category {
-      padding-top: 43px;
-    }
-  }
+@import '../styles/components/Category/Category.css';
 </style>

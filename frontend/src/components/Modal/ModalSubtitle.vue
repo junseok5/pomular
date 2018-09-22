@@ -35,7 +35,7 @@
 </template>
 
 <script>
-  import Modal from '../common/Modal.vue'
+  import Modal from '@/components/common/Modal.vue'
   import { mapState, mapMutations } from 'vuex'
 
   export default {
@@ -133,5 +133,5 @@
 </script>
 
 <style>
-  @import '../../styles/Modal/ModalSubtitle.css'
+  @import '../../styles/components/Modal/ModalSubtitle.css'
 </style>

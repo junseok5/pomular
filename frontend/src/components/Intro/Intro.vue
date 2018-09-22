@@ -14,6 +14,12 @@
                         Pomular는 영화, 미드, 유튜브 영상으로 스피킹을 공부하도록 도와줍니다.
                     </p>
                     <p>
+                        영화나 미드로 회화 공부를 하려면 배우가 대화를 시작하는 부분을 계속 반복해서 보고 들어야합니다.
+                        그러기 위해선 일반 미디어로는 몇 초 전으로 되돌려야 하거나 편리하게 대화가 시작하는 지점으로 갈 수 있는
+                        방법이 없습니다. Pomular는 클릭 한 번으로 대화 시작 부분으로 되돌려 주어 편리하게 회화
+                        공부를 하는 환경을 조성합니다.
+                    </p>
+                    <p>
                         기존 영어 스피킹 공부 서비스의 지나친 유료 결제 서비스에 부정적인 시선을 가지게 되면서 직접 개발하여 무료로 배포한 서비스입니다.
                     </p>
                     <p>
@@ -98,14 +104,11 @@ export default {
     },
     linkToYoutube () {
       this.$router.push('/list')
-    },
-    handleScroll (e) {
-      console.log(e)
     }
   }
 }
 </script>
 
 <style>
-@import '../../styles/Intro/Intro.css';
+@import '../../styles/components/Intro/Intro.css';
 </style>

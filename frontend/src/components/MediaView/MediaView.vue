@@ -37,7 +37,7 @@
 <script>
   import YoutubeMedia from './YoutubeMedia'
   import UserMedia from './UserMedia'
-  import MediaInput from '../MediaInput/MediaInput'
+  import MediaInput from '@/components/MediaInput/MediaInput'
   import { mapState, mapMutations } from 'vuex'
 
   export default {
@@ -97,5 +97,5 @@
 </script>
 
 <style>
-  @import '../../styles/MediaView/MediaView.css'
+  @import '../../styles/components/MediaView/MediaView.css'
 </style>

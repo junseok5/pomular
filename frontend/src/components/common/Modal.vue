@@ -23,5 +23,5 @@
 </template>
 
 <style>
-  @import '../../styles/common/Modal.css';
+@import '../../styles/common/Modal.css';
 </style>

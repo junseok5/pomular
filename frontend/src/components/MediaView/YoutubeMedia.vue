@@ -37,14 +37,14 @@
 
 <script>
   import { mapState, mapMutations, mapGetters } from 'vuex'
-  import TimeViewController from './MediaController/TimeViewController'
-  import MediaController from './MediaController/MediaController'
+  import TimeViewController from '@/components/MediaController/TimeViewController'
+  import MediaController from '@/components/MediaController/MediaController'
   import YoutubeTitle from './YoutubeTitle'
-  import MobileController from './MobileController/MobileController'
+  import MobileController from '@/components/MobileController/MobileController'
   import Subtitle from './Subtitle'
-  import Message from '../common/Message.vue'
-  import MediaLoading from '../common/MediaLoading.vue'
-  import ErrorView from '../common/ErrorView'
+  import Message from '@/components/common/Message.vue'
+  import MediaLoading from '@/components/common/MediaLoading.vue'
+  import ErrorView from '@/components/common/ErrorView'
 
   export default {
     name: 'YoutubeMedia',
@@ -628,5 +628,5 @@
 </script>
 
 <style>
-  @import '../../styles/MediaView/YoutubeMedia.css'
+  @import '../../styles/components/MediaView/YoutubeMedia.css'
 </style>

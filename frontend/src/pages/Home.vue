@@ -11,13 +11,13 @@
 </template>
 
 <script>
-import Header from '../components/Header/Header'
-import MediaView from '../components/MediaView/MediaView'
-import Tabs from '../components/Tabs/Tabs'
-import ModalSetting from '../components/Modal/ModalSetting'
-import ModalSubtitle from '../components/Modal/ModalSubtitle'
-import ModalVideo from '../components/Modal/ModalVideo'
-import Loading from '../components/common/Loading'
+import Header from '@/components/Header/Header'
+import MediaView from '@/components/MediaView/MediaView'
+import Tabs from '@/components/Tabs/Tabs'
+import ModalSetting from '@/components/Modal/ModalSetting'
+import ModalSubtitle from '@/components/Modal/ModalSubtitle'
+import ModalVideo from '@/components/Modal/ModalVideo'
+import Loading from '@/components/common/Loading'
 import { mapState } from 'vuex'
 
 export default {

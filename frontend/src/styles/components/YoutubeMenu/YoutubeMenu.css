@@ -1,0 +1,54 @@
+.YoutubeMenu {
+  position: fixed;
+  width: 240px;
+  left: 0;
+  top: 56px;
+  bottom: 0;
+  background-color: #454545;
+  border-radius: 14px;
+  overflow-y: auto;
+}
+
+.header-menu {
+  height: 56px;
+}
+
+.channel-list {
+  text-align: center;
+  margin: 8px 14px;
+  font-weight: bold;
+}
+
+.channel-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.channel-list li {
+  margin: 14px 0;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.channel-list li:hover {
+  background-color: #8C8C8C;
+}
+
+.active-category {
+  background-color: #8C8C8C;
+}
+
+.channel-list img {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 700px) {
+  .YoutubeMenu {
+    display: none;
+  }
+}

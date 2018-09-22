@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  import Header from '@/components/Header/Header.vue'
-  import Intro from '@/components/Intro/Intro.vue'
+  import Header from '@/components/Header/Header'
+  import Intro from '@/components/Intro/Intro'
 
   export default {
     components: {

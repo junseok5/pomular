@@ -1,0 +1,24 @@
+.HeaderInfo {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 43px;
+  top: 0;
+  left: 0;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 43px;
+  background-color: #333333;
+  border-bottom: 1px solid #454545;
+  z-index: 10;
+}
+
+.HeaderInfo img {
+  width: 23px;
+}
+
+@media screen and (max-width: 700px) {
+  .HeaderInfo {
+    display: inline-block;
+  }
+}

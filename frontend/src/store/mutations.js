@@ -288,7 +288,6 @@ const onMouseMove = (state, event) => {
 const showMediaControl = (state) => {
   if (state.deviceType === 'PC') return
   state.viewMediaContr = !state.viewMediaContr
-  console.log(state.viewMediaContr)
 }
 
 const setYoutubeId = (state, val) => {

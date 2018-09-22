@@ -41,11 +41,3 @@ const vm = new Vue({
   render: h => h(App)
 })
 vm.$mount('#app')
-
-// new Vue({
-//   el: '#app',
-//   router,
-//   store,
-//   directives: {infiniteScroll},
-//   render: h => h(App)
-// })

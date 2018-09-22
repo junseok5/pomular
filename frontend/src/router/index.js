@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '../pages/Home'
-import Intro from '../pages/Intro'
-import YoutubeList from '../pages/YoutubeList'
-import Category from '../pages/Category'
-import Error from '../pages/Error.404'
+import Home from '@/pages/Home'
+import Intro from '@/pages/Intro'
+import YoutubeList from '@/pages/YoutubeList'
+import Category from '@/pages/Category'
+import Error from '@/pages/Error.404'
 
 Vue.use(Router)
 

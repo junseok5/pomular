@@ -12,9 +12,9 @@
 </template>
 
 <script>
-  import Header from '../components/Header/Header.vue'
-  import Tabs from '../components/Tabs/Tabs'
-  import ModalSetting from '../components/Modal/ModalSetting.vue'
+  import Header from '@/components/Header/Header.vue'
+  import Tabs from '@/components/Tabs/Tabs'
+  import ModalSetting from '@/components/Modal/ModalSetting.vue'
 
   export default {
     components: {
