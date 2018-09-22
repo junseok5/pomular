@@ -2,18 +2,19 @@
   position: relative;
   width: 210px;
   height: 174.13px;
+  /* padding: 14px; */
   margin: 24px 14px;
   float: left;
   cursor: pointer;
-  transition: all .2s;
+  /* transition: all .2s; */
 }
 
-.YoutubeComponent:hover {
-  -webkit-transform:scale(1.06); /*  크롬 */
-  -moz-transform:scale(1.06); /* FireFox */
-  -o-transform:scale(1.06); /* Opera */
+/* .YoutubeComponent:hover {
+  -webkit-transform:scale(1.06);
+  -moz-transform:scale(1.06);
+  -o-transform:scale(1.06);
   transform:scale(1.06);
-}
+} */
 
 .y-thumbnail {
   position: relative;

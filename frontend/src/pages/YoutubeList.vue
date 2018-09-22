@@ -2,7 +2,7 @@
   <div class="YoutubeList">
     <Header />
     <YoutubeMenu :categoryList="categoryList" />
-    <YoutubeMain :categoryList="categoryList" />
+    <YoutubeMain />
     <Tabs />
     <DataLoading />
     <ModalSetting />
@@ -97,6 +97,6 @@
 
 <style>
 .YoutubeList {
-  overflow: hidden
+  overflow: hidden;
 }
 </style>

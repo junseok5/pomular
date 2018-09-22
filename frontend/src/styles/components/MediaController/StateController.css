@@ -1,6 +1,8 @@
 .StateController {
-  float: left;
-  width: 93%;
+  flex-grow: 14;
+  -webkit-flex-grow: 14;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .state {
@@ -32,22 +34,4 @@
 
 .state::-moz-range-track {
   background: #fff;
-}
-
-@media screen and (max-width: 800px) {
-  .StateController {
-    width: 90%
-  }
-}
-
-@media screen and (max-width: 480px) and (orientation: landscape) {
-  .StateController {
-    width: 85%;
-  }
-}
-
-@media screen and (max-width:420px) {
-  .StateController {
-    width: 85%;
-  }
 }

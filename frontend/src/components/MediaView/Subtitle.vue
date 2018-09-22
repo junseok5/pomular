@@ -23,9 +23,9 @@
 
         if (this.viewMediaContr) {
           if (width > 800) {
-            subview.bottom = '50px'
+            subview.bottom = '54px'
           } else {
-            subview.bottom = '40px'
+            subview.bottom = '45px'
           }
         } else {
           subview.bottom = '14px'

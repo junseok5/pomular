@@ -1,26 +1,14 @@
 .FullScreenController {
-  float: left;
-  width: 7%;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
   font-size: 24px;
   user-select: none;
   cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
-  .FullScreenController {
-    width: 10%
-  }
-}
-
-@media screen and (max-width: 480px) and (orientation: landscape) {
-  .FullScreenController {
-    width: 15%;
-  }
-}
-
 @media screen and (max-width: 420px) {
   .FullScreenController {
     font-size: 20px;
-    width: 15%;
+    /* width: 15%; */
   }
 }

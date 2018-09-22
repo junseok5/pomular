@@ -1,15 +1,19 @@
 .MediaController {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+
   position: absolute;
   width: 100%;
-  height: 23px;
-  padding: 12px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   bottom: 0px;
   z-index: 10;
   transition: all .2s;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 800px) {
   .MediaController {
-    padding: 6px 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }

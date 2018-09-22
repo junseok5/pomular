@@ -24,7 +24,6 @@
   import { mapState, mapMutations } from 'vuex'
 
   export default {
-    props: ['categoryList'],
     components: {
       'HeaderInfo': HeaderInfo,
       'YoutubeComponent': YoutubeComponent,
@@ -33,7 +32,65 @@
     data () {
       return {
         categoryName: this.$route.params.category,
-        youtubeData: [],
+        youtubeData: [
+          //  **** Test data ****
+          // {
+          //   category: 'TV쇼',
+          //   channelName: 'REACT',
+          //   youtubeId: 'aInPPTiCss0',
+          //   title: '10 PHOTOS OF PEOPLE WHO LOOK LIKE OBJECTS w/ ADULTS (React)',
+          //   overayTime: '9:12'
+          // },
+          // {
+          //   category: 'TV쇼',
+          //   channelName: 'REACT',
+          //   youtubeId: 'z2M7eaJHDFA',
+          //   title: 'DO TEENS KNOW 90s MUSIC? #20 (REACT: Do They Know It?)',
+          //   overayTime: '9:57'
+          // },
+          // {
+          //   category: 'TV쇼',
+          //   channelName: 'REACT',
+          //   youtubeId: 'Etg0KBE29mY',
+          //   title: 'TRY NOT TO AWWW CHALLENGE #4 (ft. FBE Staff)',
+          //   overayTime: '9:40'
+          // },
+          // {
+          //   category: 'TV쇼',
+          //   channelName: 'REACT',
+          //   youtubeId: 'Pvu2yTgOcQY',
+          //   title: 'YouTubers React to Try to Watch This Without Laughing or Grinning #18',
+          //   overayTime: '9:52'
+          // },
+          // {
+          //   category: 'TV쇼',
+          //   channelName: 'REACT',
+          //   youtubeId: '5bTQ7hxMWL0',
+          //   title: 'KIDS EAT CANADIAN FOOD | Kids Vs. Food',
+          //   overayTime: '7:13'
+          // },
+          // {
+          //   category: 'TV쇼',
+          //   channelName: 'REACT',
+          //   youtubeId: 'cSyZ4Ic2WLA',
+          //   title: 'DOMINOES RELAY CHALLENGE! (ft. Hevesh5)',
+          //   overayTime: '11:54'
+          // },
+          // {
+          //   category: 'TV쇼',
+          //   channelName: 'REACT',
+          //   youtubeId: 'ESqKPPH7apc',
+          //   title: 'ELDERS PLAY FNAF: ULTIMATE CUSTOM NIGHT | Five Nights at Freddy\'s (Elders React: Gaming)',
+          //   overayTime: '8:49'
+          // },
+          // {
+          //   category: 'TV쇼',
+          //   channelName: 'REACT',
+          //   youtubeId: 'Uz6h5wr8Zsg',
+          //   title: 'TEENS READ 10 FUNNY TEST ANSWERS #2 (REACT)',
+          //   overayTime: '5:56'
+          // }
+        ],
         errorMessage: '데이터를 불러오는데 실패하였습니다.',
         busy: false,
         isIdbData: false
