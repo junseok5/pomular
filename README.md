@@ -13,20 +13,17 @@ This site provides section jump, section repeat, repeat, subtitle language conve
 
 ## Stack
 ### Frontend
-* vue
-* vuex
-* vue-router
-* vue-infinite-scroll
-* vue-youtube-embed
-* indexedDB, localStorage
-* axios
-* pwa
+* Vue
+* Vuex
+* Vue-router
+* IndexedDB
+* Pwa
 
 ### Backend
-* Node.js Express
-* MongoDB mongoose
-* connect-history-api-fallback
-* @google-cloud/translate
+* Node.js
+* Express
+* MongoDB
+* Mongoose
 
 ## Getting Started
 ## Installing
@@ -64,57 +61,3 @@ $ npm run start
 $ cd ./backend
 $ npm run dev
 </pre>
-
-## Build and run
-To build, you have to edit config file.
-
-Access ./frontend/config/index.js
-
-And fixed it following code.
-<pre>
-...
-module.exports = {
-    build: {
-        env: require('./prod.env'),
-        index: path.resolve(__dirname, '../dist/index.html'),
-        assetsRoot: path.resolve(__dirname, '../dist/'),
-        ...
-    },
-    ...
-}
-</pre>
-
-<pre>
-cd ../frontend
-$ npm run build
-</pre>
-
-if this work is completed, you additionally edit following code.
-
-Maybe this code has annotation. And give prev code to annotation.
-<pre>
-...
-module.exports = {
-    build: {
-        env: require('./prod.env'),
-        index: path.resolve(__dirname, '../../backend/src/public/index.html'),
-         assetsRoot: path.resolve(__dirname, '../../backend/src/public'),
-        ...
-    },
-    ...
-}
-</pre>
-
-enter one more build command.
-<pre>
-$ npm run build
-</pre>
-
-Then, run following command from this folder.
-<pre>
-$ cd ../backend
-$ npm run dev
-</pre>
-
-## Contact
-if you any questions, leave an email to <vkehrkrl82@gmail.com>
