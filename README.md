@@ -26,13 +26,12 @@ This site provides section jump, section repeat, repeat, subtitle language conve
 * Mongoose
 
 ## Getting Started
-## Installing
-1. clone git file.
+### Installing
+
 <pre>
 $ git clone https://github.com/junseok5/pomular
 </pre>
 
-2. Install local dependencies.
 <pre>
 cd ./frontend
 npm install
@@ -47,17 +46,3 @@ npm install
 * Backend: http://localhost:3000
 * Database: http://localhost:27017/pomular
 
-## Development
-For the development environment, you have yo run two kind of scripts.
-
-### Frontend
-<pre>
-$ cd ./frontend
-$ npm run start
-</pre>
-
-### Backend
-<pre>
-$ cd ./backend
-$ npm run dev
-</pre>
